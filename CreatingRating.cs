@@ -16,7 +16,7 @@ namespace OHC2
     public static class CreatingRating
     {
         [FunctionName("CreatingRating")]
-        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function,"post", Route = null)]HttpRequest req,
+        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous,"post", Route = null)]HttpRequest req,
             [CosmosDB(
                 databaseName: "BFYOC",
                 collectionName: "RATINGS",

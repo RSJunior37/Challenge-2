@@ -17,7 +17,7 @@ namespace OHC2
     {
 
         [FunctionName("GetRatings")]
-        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = null)]HttpRequest req,
+        public static IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)]HttpRequest req,
             [CosmosDB(
                 databaseName: "BFYOC",
                 collectionName: "RATINGS",
