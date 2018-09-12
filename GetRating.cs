@@ -12,6 +12,7 @@ namespace OHC2
 {
     public static class GetRating
     {
+
         [FunctionName("GetRating")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "bfyoc/{id}")]HttpRequestMessage req, [CosmosDB(
                 databaseName: "BFYOC",
