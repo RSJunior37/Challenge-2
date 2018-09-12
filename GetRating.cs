@@ -32,7 +32,7 @@ namespace OHC2
 
             return rate != null
                 ? req.CreateResponse(HttpStatusCode.OK, rate.FirstOrDefault())
-                : req.CreateResponse(HttpStatusCode.BadRequest, "bump");
+                : req.CreateResponse(HttpStatusCode.BadRequest, "Rating with specified id cannot be found");
         }
     }
 }
